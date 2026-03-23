@@ -1,0 +1,23 @@
+# Create a basic subdomain wordlist
+cat > wordlists/subdomains.txt << 'EOF'
+www
+mail
+ftp
+api
+dev
+staging
+test
+admin
+vpn
+remote
+portal
+app
+blog
+shop
+cdn
+static
+assets
+login
+auth
+dashboard
+EOF

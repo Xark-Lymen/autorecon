@@ -1,0 +1,98 @@
+{
+    "target": "scanme.nmap.org",
+    "scan_date": "March 24, 2026 at 00:20:34",
+    "summary": {
+        "total_subdomains": 0,
+        "total_open_ports": 2,
+        "total_cves": 10
+    },
+    "subdomains": [],
+    "open_ports": [
+        {
+            "port": 22,
+            "state": "open",
+            "service": "ssh / openssh",
+            "banner": "",
+            "cves": [
+                {
+                    "id": "CVE-1999-0661",
+                    "description": "A system is running a version of software that was replaced with a Trojan Horse at one of its distribution points, such as (1) TCP Wrappers 7.6, (2) util-linux 2.9g, (3) wuarchive ftpd (wuftpd) 2.2 and 2.1f, (4) IRC client (ircII) ircII 2.2.9, (5) OpenSSH 3.4p1, or (6) Sendmail 8.12.6.",
+                    "score": 10.0,
+                    "severity": "N/A",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-1999-0661"
+                },
+                {
+                    "id": "CVE-2000-0525",
+                    "description": "OpenSSH does not properly drop privileges when the UseLogin option is enabled, which allows local users to execute arbitrary commands by providing the command to the ssh daemon.",
+                    "score": 10.0,
+                    "severity": "N/A",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2000-0525"
+                },
+                {
+                    "id": "CVE-2000-0535",
+                    "description": "OpenSSL 0.9.4 and OpenSSH for FreeBSD do not properly check for the existence of the /dev/random or /dev/urandom devices, which are absent on FreeBSD Alpha systems, which causes them to produce weak keys which may be more easily broken.",
+                    "score": 5.0,
+                    "severity": "N/A",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2000-0535"
+                },
+                {
+                    "id": "CVE-2000-1169",
+                    "description": "OpenSSH SSH client before 2.3.0 does not properly disable X11 or agent forwarding, which could allow a malicious SSH server to gain access to the X11 display and sniff X11 events, or gain access to the ssh-agent.",
+                    "score": 7.5,
+                    "severity": "N/A",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2000-1169"
+                },
+                {
+                    "id": "CVE-2001-1459",
+                    "description": "OpenSSH 2.9 and earlier does not initiate a Pluggable Authentication Module (PAM) session if commands are executed with no pty, which allows local users to bypass resource limits (rlimits) set in pam.d.",
+                    "score": 7.5,
+                    "severity": "N/A",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2001-1459"
+                }
+            ]
+        },
+        {
+            "port": 80,
+            "state": "open",
+            "service": "http",
+            "banner": "HTTP/1.1 200 OK\r\nDate: Mon, 23 Mar 2026 18:50:26 GMT\r\nServer: Apache/2.4.7 (Ubuntu)\r\nAccept-Ranges: bytes\r\nVary: Accept-Encoding\r\nConnection: close\r\nContent-Type: text/html",
+            "cves": [
+                {
+                    "id": "CVE-1999-0236",
+                    "description": "ScriptAlias directory in NCSA and Apache httpd allowed attackers to read CGI programs.",
+                    "score": 7.5,
+                    "severity": "HIGH",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-1999-0236"
+                },
+                {
+                    "id": "CVE-1999-1068",
+                    "description": "Oracle Webserver 2.1, when serving PL/SQL stored procedures, allows remote attackers to cause a denial of service via a long HTTP GET request.",
+                    "score": 5.0,
+                    "severity": "N/A",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-1999-1068"
+                },
+                {
+                    "id": "CVE-1999-0071",
+                    "description": "Apache httpd cookie buffer overflow for versions 1.1.1 and earlier.",
+                    "score": 7.5,
+                    "severity": "N/A",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-1999-0071"
+                },
+                {
+                    "id": "CVE-1999-0267",
+                    "description": "Buffer overflow in NCSA HTTP daemon v1.3 allows remote command execution.",
+                    "score": 7.5,
+                    "severity": "N/A",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-1999-0267"
+                },
+                {
+                    "id": "CVE-1999-1207",
+                    "description": "Buffer overflow in web-admin tool in NetXRay 2.6 allows remote attackers to cause a denial of service, and possibly execute arbitrary commands, via a long HTTP request.",
+                    "score": 7.5,
+                    "severity": "N/A",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-1999-1207"
+                }
+            ]
+        }
+    ]
+}
